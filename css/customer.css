@@ -1,0 +1,427 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 95%;
+  background-color: #edf2f9;
+  border-top: 2px solid #06a9ca;
+}
+
+.tabla-registros th {
+  background-color: #06a9ca;
+  color: #fff;
+  font-style: arial;
+  font-size: 90%;
+}
+.tabla-registros tr:nth-child(even) {
+  background-color: #eee;
+}
+.tabla-registros tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+a {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 95%;
+  color: #5d6d7e;
+}
+
+a:hover {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 95%;
+  text-decoration: none;
+  color: #000;
+}
+
+#barra-superior {
+  padding-top: 5px;
+}
+
+.btn-login {
+  background-color: #06a9ca;
+  color: #fff;
+}
+
+.btn-login:hover {
+  background-color: #06a9ca;
+  color: #fff;
+}
+
+.inputLogin {
+  font-size: 95%;
+  color: #566573;
+  padding: 5px 5px 5px 25px;
+}
+
+.labelLogin {
+  font-size: 85%;
+}
+
+.espacioUno {
+  width: 100%;
+  height: 10px;
+}
+
+.espacioDos {
+  width: 100%;
+  height: 20px;
+}
+
+.espacioAmplio {
+  width: 100%;
+  height: 120px;
+}
+
+.buscador {
+  width: 330px;
+  height: 35px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  padding-left: 15px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+.space {
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#general {
+  background-color: #f2f3f4;
+  border-radius: 20px 20px 0 0;
+  padding-left: 10px;
+}
+
+.titulos-menu {
+  position: relative;
+  font-size: 120%;
+  font-weight: bold;
+  display: block;
+  clear: both;
+  color: #5d6d7e;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+ul.horizontal {
+  margin: 0;
+  padding: 0;
+  font-size: 95%;
+  color: #5d6d7e;
+  display: block;
+}
+
+ul.horizontal li {
+  display: block;
+  float: left;
+  list-style-type: none;
+  position: relative;
+  width: 180px;
+}
+
+ul.horizontal li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  height: 27px;
+  color: #5d6d7e;
+}
+
+ul.horizontal li a:hover {
+  color: #000;
+}
+
+.fa-file-text-o {
+  color: #5d6d7e;
+}
+.fa-users {
+  color: #5d6d7e;
+}
+.fa-user {
+  color: #5d6d7e;
+}
+.fa-circle-o-notch {
+  color: #5d6d7e;
+}
+.fa-user-circle-o {
+  color: #5d6d7e;
+}
+.fa-user-secret {
+  color: #5d6d7e;
+}
+.fa-handshake-o {
+  color: #5d6d7e;
+}
+.fa-caret-square-o-right {
+  color: #5d6d7e;
+}
+.fa-graduation-cap {
+  color: #5d6d7e;
+}
+
+.fa-file-text-o:hover {
+  color: #34495e;
+}
+.fa-users:hover {
+  color: #34495e;
+}
+.fa-user:hover {
+  color: #34495e;
+}
+.fa-circle-o-notch:hover {
+  color: #34495e;
+}
+.fa-user-circle-o:hover {
+  color: #34495e;
+}
+.fa-user-secret:hover {
+  color: #34495e;
+}
+.fa-handshake-o:hover {
+  color: #34495e;
+}
+.fa-caret-square-o-right:hover {
+  color: #34495e;
+}
+.fa-graduation-cap:hover {
+  color: #34495e;
+}
+
+.fa-trash-o {
+  background-color: #f0360e;
+  color: #fff;
+  padding: 5px;
+  border-radius: 4px 4px 4px 4px;
+}
+
+#submitAP {
+  border: 0px;
+  background-color: transparent;
+}
+
+.fa-cog {
+  color: #06a9ca;
+}
+.fa-shopping-cart {
+  color: #06a9ca;
+}
+.fa-bell-o {
+  color: #06a9ca;
+}
+.fa-user {
+  color: #06a9ca;
+}
+
+.linea {
+  border-top: 2px dotted #ccd1d1;
+}
+
+.brain-foot {
+  color: #566573;
+  font-weight: bold;
+  font-size: 120%;
+}
+
+ul.footer {
+  margin: 0;
+  padding: 0;
+  font-size: 95%;
+  color: #5d6d7e;
+  display: block;
+}
+
+ul.footer li {
+  display: block;
+  float: left;
+  list-style-type: none;
+  position: relative;
+  width: 180px;
+}
+
+ul.footer li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  height: 27px;
+  color: #5d6d7e;
+}
+
+ul.footer li a:hover {
+  color: #000;
+}
+
+.list-group {
+  border: none;
+  background-color: transparent;
+}
+
+.list-group-item {
+  border: none;
+  background-color: transparent;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+
+ul.list-group li a {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  height: 27px;
+  color: #5d6d7e;
+}
+
+ul.list-group li a:hover {
+  color: #000;
+}
+
+ul.list-group li a.mi-active {
+  text-decoration: none;
+  display: inline-block;
+  padding: 5px 10px;
+  height: 27px;
+  color: #06a9ca;
+  font-weight: bold;
+}
+
+.lineaSolida {
+  border-top: 2px dotted #ccd1d1;
+}
+
+.contenidoEtiqueta {
+  margin-left: 3px;
+  padding-left: 3px;
+  font-size: 90%;
+}
+
+input[type="radio"] ~ .verde {
+  background-color: #229954;
+  background-clip: content-box;
+}
+
+.form-check-inline {
+  padding: 1px;
+  margin: 1px;
+}
+
+.tabla-registros col:first-child {
+  background: #ff0;
+}
+.tabla-registros col:nth-child(2n + 3) {
+  background: #ccc;
+}
+
+.verde {
+  width: 13px;
+  height: 13px;
+  border: 0px;
+  background-color: #229954;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 3px;
+  float: left;
+  margin-left: 1px;
+  margin-right: 11px;
+}
+
+.rojo {
+  width: 13px;
+  height: 13px;
+  border: 0px;
+  background-color: #c70039;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 2px;
+  float: left;
+  margin-left: 3px;
+  margin-right: 11px;
+}
+
+.amarillo {
+  width: 13px;
+  height: 13px;
+  border: 0px;
+  background-color: #ffc300;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 2px;
+  float: left;
+  margin-left: 1px;
+  margin-right: 11px;
+}
+
+.naranja {
+  width: 13px;
+  height: 13px;
+  border: 0px;
+  background-color: #ff5733;
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  padding: 2px;
+  float: left;
+  margin-left: 5px;
+  margin-right: 2px;
+}
+
+/*Recursos*/
+
+#contenidoTipoRecurso {
+  display: none;
+  padding: 20px 5px 20px 20px;
+}
+#contenidoTipoRecursoFormulario {
+  display: none;
+  padding: 20px 5px 20px 20px;
+}
+
+/*Grupos*/
+.nombreGrupo {
+  color: #283747;
+  font-weight: bold;
+}
+
+/*Cursos*/
+
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/***Detalles grupo ***/
+.evalacionesSinPreguntas {
+  font-size: 70%;
+}
+
+/**Presentar evaluacion**/
+
+#contestarEvaluacion {
+  display: none;
+}
+
+.pers {
+  font-weight: bold;
+}
+
+.lblInbiEnglishSchool {
+  font-size: 75%;
+}
+.editarGrupo {
+  font-size: 75%;
+}
+
+a.editarGrupo:hover {
+  font-size: 70%;
+}
+
+.bgGrupoRaius {
+  border: 1px solid #eaeded;
+  -moz-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  padding: 10px;
+  background-color: #f4f6f6;
+}
+.nombrePlantel {
+  font-size: 90%;
+  font-weight: bold;
+}
+
+
