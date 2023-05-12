@@ -36,7 +36,7 @@
       </div>
       <div class="col-md-7">
       <br/>
-      <a class="btn btn-success btn-sm" href="<?php echo site_url('/Movimientos/agregarmovimientos'); ?>" role="button">Agregar un movimiento</a>
+      <a class="btn btn-success btn-sm" href="<?php echo site_url('/Movimientos/agregarmovimiento'); ?>" role="button">Agregar un movimiento</a>
       <br/><br/>
       <?php 
           if(empty($movimientos)){

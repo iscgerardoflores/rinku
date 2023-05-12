@@ -52,8 +52,10 @@ abstract class BaseController extends Controller
         parent::initController($request, $response, $logger);
 
         // Preload any models, libraries, etc, here.
-
+        helper('Catalogos');
         $this->session = \Config\Services::session();
-        $this->db = \Config\Database::connect(); 
+        $this->db = \Config\Database::connect();
+
+        
     }
 }

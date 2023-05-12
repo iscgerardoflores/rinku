@@ -49,13 +49,13 @@
         $session->remove('Empleado'); ?>
 
 
-      <form action="<?php echo site_url('Empleados/insertarEmpleado'); ?>" method="post">
+      <form action="<?php echo site_url('Empleados/editarEmpleadoForm'); ?>" method="post">
 
         <div class="espacioDos"></div>
         <div class="row">
           <div class="col">
             Numero de empleado <span id="solonumeros">(Solo ingrese numeros)</span>
-            <input type="number" name="num_empleado" id="num_empleado" class="form-control form-control-sm" required="">
+            <input type="number" name="numempleado" id="numempleado" class="form-control form-control-sm" required="" value="<?php echo  $numempleado ?>">
           </div>
           <div class="col">
 
@@ -65,11 +65,11 @@
         <div class="row">
           <div class="col">
             Nombre
-            <input type="text" name="nombre" id="nombre" class="form-control form-control-sm" required="">
+            <input type="text" name="nombre" id="nombre" class="form-control form-control-sm" required="" value="<?php echo  $nombre ?>">
           </div>
           <div class="col">
           Apellido Paterno
-            <input type="text" name="apellidoPaterno" id="apellidoPaterno" class="form-control form-control-sm" required="">
+            <input type="text" name="apellidoPaterno" id="apellidoPaterno" class="form-control form-control-sm" required="" value="<?php echo  $apellidoPaterno ?>">
           </div>
         </div>
         <div class="espacioDos"></div>
@@ -77,22 +77,33 @@
         <div class="row">
           <div class="col">
           Apellido Materno
-            <input type="text" name="apellidoMaterno" id="apellidoMaterno" class="form-control form-control-sm" required="">
+            <input type="text" name="apellidoMaterno" id="apellidoMaterno" class="form-control form-control-sm" required="" value="<?php echo  $apellidoMaterno ?>">
           </div>
           <div class="col">
           Rol
-            <select class="form-control form-control-sm" name="rol" id="rol" required="">
+            <select class="form-control form-control-sm" name="id_rol" id="id_rol" required="">
               <option value="">Seleccione una opción</option>
-              <option value="1">Chofer</option>
-              <option value="2">Cargador</option>
-              <option value="3">Auxiliar</option>
+              <?php if ($id_rol == 1) { ?>
+                      <option selected="selected" value="1">Chofer</option>
+                      <option value="2">Cargador</option>
+                      <option value="3">Auxiliar</option>
+                    <?php } elseif ($id_rol == 2) { ?>
+                      <option value="1">Chofer</option>
+                      <option selected="selected" value="2">Cargador</option>
+                      <option value="3">Auxiliar</option>
+                    <?php } else if ($id_rol ==3){?>
+                      <option value="1">Chofer</option>
+                      <option value="2">Cargador</option>
+                      <option selected="selected" value="3">Auxiliar</option>
+                      <?php } ?>
             </select>
           </div>
         </div>
 
         <div class="espacioUno"></div><div class="espacioUno"></div>
         <div align="right">
-        <button type="submit" name="submitaddempleado" class="btn btn-primary btn-sm">Guardar</button>
+        <input type="hidden" name="idEmpleado" id="idEmpleado" value="<?php echo $idEmpleado; ?>">
+        <button type="submit" name="submiteditarempleado" class="btn btn-primary btn-sm">Guardar</button>
         <button type="reset" class="btn btn-primary btn-sm">Cancelar</button>
         </div>
 

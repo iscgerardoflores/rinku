@@ -51,6 +51,7 @@
                   <th class="text-left">Apellido Paterno</th>
                   <th class="text-left">Apellido Materno</th>
                   <th class="text-left">Rol</th>
+                  <th class="text-left">Editar</th>
 
                 </tr>
               </thead>
@@ -78,6 +79,11 @@
                   ?>
                 
                 </td>
+                <td class="text-center">
+                    <a href="<?php echo site_url("Empleados/editarEmpleado/".$fila['id']."") ?>">
+                      <i class="fa fa-pencil-square-o fa-1x" aria-hidden="true"></i>
+                    </a>
+                  </td>
                 </tr>
               <?php } ?>
 
